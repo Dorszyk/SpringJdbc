@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CustomerServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CustomerServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.project.integration.html">org.project.integration</a> &gt; CustomerServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.084s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">50%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="thatPurchaseIsNotRemovedWhenCustomerRemovingFails()"></a>
+<h3 class="failures">Polecenie 4 cz.2</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: Expected java.lang.RuntimeException to be thrown, but nothing was thrown.
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at app//org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3082)
+	at app//org.project.integration.CustomerServiceTest.thatPurchaseIsNotRemovedWhenCustomerRemovingFails(CustomerServiceTest.java:87)
+	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.6/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@17.0.6/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@17.0.6/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.6/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Polecenie 4 cz.1</td>
+<td class="success">thatCustomerIsRemovedCorrectly()</td>
+<td class="success">1.266s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Polecenie 4 cz.2</td>
+<td class="failures">thatPurchaseIsNotRemovedWhenCustomerRemovingFails()</td>
+<td class="failures">0.818s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+INFO  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1d8062d2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1e63ec0b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3b956878, org.springframework.test.context.support.DirtiesContextTestExecutionListener@36546a22, org.springframework.test.context.transaction.TransactionalTestExecutionListener@285c08c8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@295eaa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@3918c187]
+INFO  - Producer created: [Producer(id=121, producerName=Pvsjtpbjkol, address=address)]
+INFO  - Product created: [Product(id=130, productCode=PHTnkek25, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=121, producerName=Pvsjtpbjkol, address=address))]
+INFO  - Purchase created: [Purchase(id=130, customer=Customer(id=121, userName=Luptfcwwppd81, email=Luptfcwwppd81@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+55372280374), product=Product(id=130, productCode=PHTnkek25, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=121, producerName=Pvsjtpbjkol, address=address)), quantity=3, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=121, customer=Customer(id=121, userName=Luptfcwwppd81, email=Luptfcwwppd81@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+55372280374), product=Product(id=130, productCode=PHTnkek25, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=121, producerName=Pvsjtpbjkol, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=122, producerName=Brllrdphmfy, address=address)]
+INFO  - Product created: [Product(id=131, productCode=SQIpdnn66, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=122, producerName=Brllrdphmfy, address=address))]
+INFO  - Purchase created: [Purchase(id=131, customer=Customer(id=122, userName=Jqgiuxbuwoq86, email=Jqgiuxbuwoq86@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+67378572310), product=Product(id=131, productCode=SQIpdnn66, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=122, producerName=Brllrdphmfy, address=address)), quantity=2, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=122, customer=Customer(id=122, userName=Jqgiuxbuwoq86, email=Jqgiuxbuwoq86@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+67378572310), product=Product(id=131, productCode=SQIpdnn66, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=122, producerName=Brllrdphmfy, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=123, producerName=Kpyjjygahqa, address=address)]
+INFO  - Product created: [Product(id=132, productCode=JRBbfrp77, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=123, producerName=Kpyjjygahqa, address=address))]
+INFO  - Purchase created: [Purchase(id=132, customer=Customer(id=123, userName=Ahxmxdnkhde44, email=Ahxmxdnkhde44@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+66435107181), product=Product(id=132, productCode=JRBbfrp77, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=123, producerName=Kpyjjygahqa, address=address)), quantity=3, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=123, customer=Customer(id=123, userName=Ahxmxdnkhde44, email=Ahxmxdnkhde44@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+66435107181), product=Product(id=132, productCode=JRBbfrp77, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=123, producerName=Kpyjjygahqa, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=124, producerName=Veskcifhapa, address=address)]
+INFO  - Product created: [Product(id=133, productCode=CAHicgj10, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=124, producerName=Veskcifhapa, address=address))]
+INFO  - Purchase created: [Purchase(id=133, customer=Customer(id=124, userName=Vupkucfhyyl43, email=Vupkucfhyyl43@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+45617826518), product=Product(id=133, productCode=CAHicgj10, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=124, producerName=Veskcifhapa, address=address)), quantity=4, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=124, customer=Customer(id=124, userName=Vupkucfhyyl43, email=Vupkucfhyyl43@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+45617826518), product=Product(id=133, productCode=CAHicgj10, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=124, producerName=Veskcifhapa, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=125, producerName=Hpmdsuatxom, address=address)]
+INFO  - Product created: [Product(id=134, productCode=WOJkpbe87, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=125, producerName=Hpmdsuatxom, address=address))]
+INFO  - Purchase created: [Purchase(id=134, customer=Customer(id=125, userName=Watrlcifscl87, email=Watrlcifscl87@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+65406380505), product=Product(id=134, productCode=WOJkpbe87, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=125, producerName=Hpmdsuatxom, address=address)), quantity=3, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=125, customer=Customer(id=125, userName=Watrlcifscl87, email=Watrlcifscl87@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+65406380505), product=Product(id=134, productCode=WOJkpbe87, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=125, producerName=Hpmdsuatxom, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=126, producerName=Bdsxatndywm, address=address)]
+INFO  - Product created: [Product(id=135, productCode=UMDhtwr57, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=126, producerName=Bdsxatndywm, address=address))]
+INFO  - Purchase created: [Purchase(id=135, customer=Customer(id=126, userName=Eapqlybgnfl30, email=Eapqlybgnfl30@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+35608317223), product=Product(id=135, productCode=UMDhtwr57, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=126, producerName=Bdsxatndywm, address=address)), quantity=4, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=126, customer=Customer(id=126, userName=Eapqlybgnfl30, email=Eapqlybgnfl30@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+35608317223), product=Product(id=135, productCode=UMDhtwr57, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=126, producerName=Bdsxatndywm, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=127, producerName=Domytmyrgrd, address=address)]
+INFO  - Product created: [Product(id=136, productCode=BFCplni40, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=127, producerName=Domytmyrgrd, address=address))]
+INFO  - Purchase created: [Purchase(id=136, customer=Customer(id=127, userName=Dujytsveaft67, email=Dujytsveaft67@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+51828218570), product=Product(id=136, productCode=BFCplni40, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=127, producerName=Domytmyrgrd, address=address)), quantity=4, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=127, customer=Customer(id=127, userName=Dujytsveaft67, email=Dujytsveaft67@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+51828218570), product=Product(id=136, productCode=BFCplni40, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=127, producerName=Domytmyrgrd, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=128, producerName=Pygdgabtbpu, address=address)]
+INFO  - Product created: [Product(id=137, productCode=KKHrstn16, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=128, producerName=Pygdgabtbpu, address=address))]
+INFO  - Purchase created: [Purchase(id=137, customer=Customer(id=128, userName=Rxgmecmxjwn22, email=Rxgmecmxjwn22@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+02525057207), product=Product(id=137, productCode=KKHrstn16, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=128, producerName=Pygdgabtbpu, address=address)), quantity=1, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=128, customer=Customer(id=128, userName=Rxgmecmxjwn22, email=Rxgmecmxjwn22@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+02525057207), product=Product(id=137, productCode=KKHrstn16, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=128, producerName=Pygdgabtbpu, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=129, producerName=Altesefketa, address=address)]
+INFO  - Product created: [Product(id=138, productCode=NJGemys23, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=129, producerName=Altesefketa, address=address))]
+INFO  - Purchase created: [Purchase(id=138, customer=Customer(id=129, userName=Fjwravskjxe40, email=Fjwravskjxe40@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+70173420765), product=Product(id=138, productCode=NJGemys23, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=129, producerName=Altesefketa, address=address)), quantity=4, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=129, customer=Customer(id=129, userName=Fjwravskjxe40, email=Fjwravskjxe40@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+70173420765), product=Product(id=138, productCode=NJGemys23, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=129, producerName=Altesefketa, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=130, producerName=Wlkamhhuoxi, address=address)]
+INFO  - Product created: [Product(id=139, productCode=VEPihbm81, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=130, producerName=Wlkamhhuoxi, address=address))]
+INFO  - Purchase created: [Purchase(id=139, customer=Customer(id=130, userName=Vjksgkmqtdc76, email=Vjksgkmqtdc76@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+02721636330), product=Product(id=139, productCode=VEPihbm81, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=130, producerName=Wlkamhhuoxi, address=address)), quantity=3, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=130, customer=Customer(id=130, userName=Vjksgkmqtdc76, email=Vjksgkmqtdc76@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+02721636330), product=Product(id=139, productCode=VEPihbm81, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=130, producerName=Wlkamhhuoxi, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=131, producerName=Best Producer, address=Best Address)]
+INFO  - Product created: [Product(id=140, productCode=g22s, productName=Shoes, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=131, producerName=Best Producer, address=Best Address))]
+INFO  - Product created: [Product(id=141, productCode=Kl09, productName=TV, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=131, producerName=Best Producer, address=Best Address))]
+INFO  - Purchase created: [Purchase(id=140, customer=Customer(id=131, userName=zajavkowyzajavkowicz, email=zajavkowyzajavkowicz@gmail.com, name=Administrator, surname=Zajavka, dateOfBirth=1950-10-04, telephoneNumber=+56847542165), product=Product(id=140, productCode=g22s, productName=Shoes, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=131, producerName=Best Producer, address=Best Address)), quantity=1, dateTime=2020-01-02T11:34:10+02:00)]
+INFO  - Purchase created: [Purchase(id=141, customer=Customer(id=131, userName=zajavkowyzajavkowicz, email=zajavkowyzajavkowicz@gmail.com, name=Administrator, surname=Zajavka, dateOfBirth=1950-10-04, telephoneNumber=+56847542165), product=Product(id=141, productCode=Kl09, productName=TV, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=131, producerName=Best Producer, address=Best Address)), quantity=3, dateTime=2020-01-02T11:34:10+02:00)]
+INFO  - Opinion created: [Opinion(id=131, customer=Customer(id=131, userName=zajavkowyzajavkowicz, email=zajavkowyzajavkowicz@gmail.com, name=Administrator, surname=Zajavka, dateOfBirth=1950-10-04, telephoneNumber=+56847542165), product=Product(id=140, productCode=g22s, productName=Shoes, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=131, producerName=Best Producer, address=Best Address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30+05:00)]
+WARN  - Trying to find non-existing user: [zajavkowyzajavkowicz@gmail.com]
+INFO  - Producer created: [Producer(id=132, producerName=Woepxwtjigo, address=address)]
+INFO  - Product created: [Product(id=142, productCode=OOBiopm83, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=132, producerName=Woepxwtjigo, address=address))]
+INFO  - Purchase created: [Purchase(id=142, customer=Customer(id=132, userName=Gdcvsllohba68, email=Gdcvsllohba68@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+82537214060), product=Product(id=142, productCode=OOBiopm83, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=132, producerName=Woepxwtjigo, address=address)), quantity=3, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=132, customer=Customer(id=132, userName=Gdcvsllohba68, email=Gdcvsllohba68@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+82537214060), product=Product(id=142, productCode=OOBiopm83, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=132, producerName=Woepxwtjigo, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=133, producerName=Ttoevlvhbmn, address=address)]
+INFO  - Product created: [Product(id=143, productCode=DUHqhmc45, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=133, producerName=Ttoevlvhbmn, address=address))]
+INFO  - Purchase created: [Purchase(id=143, customer=Customer(id=133, userName=Shwbeqxfohj63, email=Shwbeqxfohj63@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+35021327144), product=Product(id=143, productCode=DUHqhmc45, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=133, producerName=Ttoevlvhbmn, address=address)), quantity=4, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=133, customer=Customer(id=133, userName=Shwbeqxfohj63, email=Shwbeqxfohj63@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+35021327144), product=Product(id=143, productCode=DUHqhmc45, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=133, producerName=Ttoevlvhbmn, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=134, producerName=Sgsletmwvqg, address=address)]
+INFO  - Product created: [Product(id=144, productCode=BMWhmav04, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=134, producerName=Sgsletmwvqg, address=address))]
+INFO  - Purchase created: [Purchase(id=144, customer=Customer(id=134, userName=Bjgftnlsuho81, email=Bjgftnlsuho81@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+12118133830), product=Product(id=144, productCode=BMWhmav04, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=134, producerName=Sgsletmwvqg, address=address)), quantity=1, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=134, customer=Customer(id=134, userName=Bjgftnlsuho81, email=Bjgftnlsuho81@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+12118133830), product=Product(id=144, productCode=BMWhmav04, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=134, producerName=Sgsletmwvqg, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=135, producerName=Jagobtlcarj, address=address)]
+INFO  - Product created: [Product(id=145, productCode=CHCkcxx75, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=135, producerName=Jagobtlcarj, address=address))]
+INFO  - Purchase created: [Purchase(id=145, customer=Customer(id=135, userName=Vyfcqkmuglu26, email=Vyfcqkmuglu26@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+17460802504), product=Product(id=145, productCode=CHCkcxx75, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=135, producerName=Jagobtlcarj, address=address)), quantity=4, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=135, customer=Customer(id=135, userName=Vyfcqkmuglu26, email=Vyfcqkmuglu26@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+17460802504), product=Product(id=145, productCode=CHCkcxx75, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=135, producerName=Jagobtlcarj, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=136, producerName=Gpuhwbdnpqp, address=address)]
+INFO  - Product created: [Product(id=146, productCode=UWOdawa46, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=136, producerName=Gpuhwbdnpqp, address=address))]
+INFO  - Purchase created: [Purchase(id=146, customer=Customer(id=136, userName=Wkmenaiqjwh57, email=Wkmenaiqjwh57@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+21254824506), product=Product(id=146, productCode=UWOdawa46, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=136, producerName=Gpuhwbdnpqp, address=address)), quantity=2, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=136, customer=Customer(id=136, userName=Wkmenaiqjwh57, email=Wkmenaiqjwh57@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+21254824506), product=Product(id=146, productCode=UWOdawa46, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=136, producerName=Gpuhwbdnpqp, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=137, producerName=Ckooixdhsgv, address=address)]
+INFO  - Product created: [Product(id=147, productCode=DTRrlte82, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=137, producerName=Ckooixdhsgv, address=address))]
+INFO  - Purchase created: [Purchase(id=147, customer=Customer(id=137, userName=Lbhnjqwpbjb17, email=Lbhnjqwpbjb17@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+62501220538), product=Product(id=147, productCode=DTRrlte82, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=137, producerName=Ckooixdhsgv, address=address)), quantity=1, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=137, customer=Customer(id=137, userName=Lbhnjqwpbjb17, email=Lbhnjqwpbjb17@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+62501220538), product=Product(id=147, productCode=DTRrlte82, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=137, producerName=Ckooixdhsgv, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=138, producerName=Pkcfuerrkvp, address=address)]
+INFO  - Product created: [Product(id=148, productCode=FUTmbpt55, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=138, producerName=Pkcfuerrkvp, address=address))]
+INFO  - Purchase created: [Purchase(id=148, customer=Customer(id=138, userName=Gciytirdtqy73, email=Gciytirdtqy73@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+56122046661), product=Product(id=148, productCode=FUTmbpt55, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=138, producerName=Pkcfuerrkvp, address=address)), quantity=2, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=138, customer=Customer(id=138, userName=Gciytirdtqy73, email=Gciytirdtqy73@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+56122046661), product=Product(id=148, productCode=FUTmbpt55, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=138, producerName=Pkcfuerrkvp, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=139, producerName=Ytffskgdgqk, address=address)]
+INFO  - Product created: [Product(id=149, productCode=CEPwpef78, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=139, producerName=Ytffskgdgqk, address=address))]
+INFO  - Purchase created: [Purchase(id=149, customer=Customer(id=139, userName=Mxbwtejmvsp18, email=Mxbwtejmvsp18@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+13620526702), product=Product(id=149, productCode=CEPwpef78, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=139, producerName=Ytffskgdgqk, address=address)), quantity=1, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=139, customer=Customer(id=139, userName=Mxbwtejmvsp18, email=Mxbwtejmvsp18@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+13620526702), product=Product(id=149, productCode=CEPwpef78, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=139, producerName=Ytffskgdgqk, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=140, producerName=Wnbqgprdffd, address=address)]
+INFO  - Product created: [Product(id=150, productCode=LYIgkqi21, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=140, producerName=Wnbqgprdffd, address=address))]
+INFO  - Purchase created: [Purchase(id=150, customer=Customer(id=140, userName=Xpcjdfdfbgk06, email=Xpcjdfdfbgk06@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+34431611502), product=Product(id=150, productCode=LYIgkqi21, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=140, producerName=Wnbqgprdffd, address=address)), quantity=3, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=140, customer=Customer(id=140, userName=Xpcjdfdfbgk06, email=Xpcjdfdfbgk06@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+34431611502), product=Product(id=150, productCode=LYIgkqi21, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=140, producerName=Wnbqgprdffd, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=141, producerName=Qhawyhkjrkg, address=address)]
+INFO  - Product created: [Product(id=151, productCode=QEPxsym31, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=141, producerName=Qhawyhkjrkg, address=address))]
+INFO  - Purchase created: [Purchase(id=151, customer=Customer(id=141, userName=Fkrpyhpsghw71, email=Fkrpyhpsghw71@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+06745601254), product=Product(id=151, productCode=QEPxsym31, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=141, producerName=Qhawyhkjrkg, address=address)), quantity=4, dateTime=2020-01-02T11:34:10.000000754+02:00)]
+INFO  - Opinion created: [Opinion(id=141, customer=Customer(id=141, userName=Fkrpyhpsghw71, email=Fkrpyhpsghw71@gmail.com, name=name, surname=surname, dateOfBirth=1984-10-02, telephoneNumber=+06745601254), product=Product(id=151, productCode=QEPxsym31, productName=productName, productPrice=165.52, adultsOnly=false, description=someDescription, producer=Producer(id=141, producerName=Qhawyhkjrkg, address=address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30.000000001+05:00)]
+INFO  - Producer created: [Producer(id=142, producerName=Best Producer, address=Best Address)]
+INFO  - Product created: [Product(id=152, productCode=g22s, productName=Shoes, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=142, producerName=Best Producer, address=Best Address))]
+INFO  - Product created: [Product(id=153, productCode=Kl09, productName=TV, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=142, producerName=Best Producer, address=Best Address))]
+INFO  - Purchase created: [Purchase(id=152, customer=Customer(id=142, userName=zajavkowyzajavkowicz, email=zajavkowyzajavkowicz@gmail.com, name=Administrator, surname=Zajavka, dateOfBirth=1950-10-04, telephoneNumber=+56847542165), product=Product(id=152, productCode=g22s, productName=Shoes, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=142, producerName=Best Producer, address=Best Address)), quantity=1, dateTime=2020-01-02T11:34:10+02:00)]
+INFO  - Purchase created: [Purchase(id=153, customer=Customer(id=142, userName=zajavkowyzajavkowicz, email=zajavkowyzajavkowicz@gmail.com, name=Administrator, surname=Zajavka, dateOfBirth=1950-10-04, telephoneNumber=+56847542165), product=Product(id=153, productCode=Kl09, productName=TV, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=142, producerName=Best Producer, address=Best Address)), quantity=3, dateTime=2020-01-04T11:34:10+02:00)]
+INFO  - Opinion created: [Opinion(id=142, customer=Customer(id=142, userName=zajavkowyzajavkowicz, email=zajavkowyzajavkowicz@gmail.com, name=Administrator, surname=Zajavka, dateOfBirth=1950-10-04, telephoneNumber=+56847542165), product=Product(id=152, productCode=g22s, productName=Shoes, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=142, producerName=Best Producer, address=Best Address)), stars=4, comment=My opinion is my opinion, dateTime=2020-01-04T12:44:30+05:00)]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 17 lut 2023, 21:56:15</p>
+</div>
+</div>
+</body>
+</html>
