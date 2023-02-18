@@ -13,7 +13,7 @@ public class StoreFixtures {
                 .email("zajavkowyzajavkowicz@gmail.com")
                 .name("Administrator")
                 .surname("Zajavka")
-                .dateOfBirth(LocalDate.of(1986, 10, 2))
+                .dateOfBirth(LocalDate.of(1984, 10, 2))
                 .telephoneNumber("+56847542165")
                 .build();
     }
@@ -24,7 +24,7 @@ public class StoreFixtures {
                 .product(product)
                 .stars((byte) 4)
                 .comment("My opinion is my opinion")
-                .dateTime(OffsetDateTime.of(2020, 1, 4, 12, 44, 30, 0, ZoneOffset.ofHours(5)))
+                .dateTime(OffsetDateTime.of(2020, 1, 4, 12, 44, 30, 0, ZoneOffset.ofHours(4)))
                 .build();
     }
 

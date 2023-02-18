@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.project.business.OpinionServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-18T17:23:25" hostname="INBPOLNOT065" time="1.14">
+  <properties/>
+  <testcase name="Polecenie 5 cz.2" classname="org.project.business.OpinionServiceTest" time="1.125"/>
+  <testcase name="Polecenie 5 cz.1" classname="org.project.business.OpinionServiceTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

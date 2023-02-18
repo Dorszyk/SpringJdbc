@@ -22,8 +22,10 @@ public class OpinionDataBaseRepository implements OpinionRepository {
     private static final String SELECT_ALL = "SELECT * FROM OPINION ORDER BY DATE_TIME";
     private static final String SELECT_ALL_WHERE_CUSTOMER_EMAIL =
             "SELECT * FROM OPINION AS OPN " +
-                    "INNER JOIN CUSTOMER AS CUS ON CUS.ID = OPN.CUSTOMER_ID WHERE CUS.EMAIL = :email " +
-                    "ORDER BY DATE_TIME";
+                    "INNER JOIN CUSTOMER AS CUS ON CUS.ID = OPN.CUSTOMER_ID " +
+                    "WHERE CUS.EMAIL = :email " +
+                    "ORDER BY DATE_TIME"
+            ;
     private static final String SELECT_ALL_WHERE_PRODUCT_CODE =
             "SELECT * FROM OPINION AS OPN " +
                     "INNER JOIN PRODUCT AS PRD ON PRD.ID = OPN.PRODUCT_ID WHERE PRD.PRODUCT_CODE = :productCode " +
