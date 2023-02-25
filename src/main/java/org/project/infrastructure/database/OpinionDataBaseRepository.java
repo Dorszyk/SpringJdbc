@@ -27,9 +27,7 @@ public class OpinionDataBaseRepository implements OpinionRepository {
                     "ORDER BY DATE_TIME"
             ;
     private static final String SELECT_ALL_WHERE_PRODUCT_CODE =
-            "SELECT * FROM OPINION AS OPN " +
-                    "INNER JOIN PRODUCT AS PRD ON PRD.ID = OPN.PRODUCT_ID WHERE PRD.PRODUCT_CODE = :productCode " +
-                    "ORDER BY DATE_TIME";
+            "SELECT * FROM OPINION AS OPN INNER JOIN PRODUCT AS PRD ON PRD.ID = OPN.PRODUCT_ID WHERE PRD.PRODUCT_CODE = :productCode ORDER BY DATE_TIME";
     private static final String SELECT_UNWANTED_OPINIONS = "SELECT * FROM OPINION WHERE STARS < 4";
     private static final String SELECT_UNWANTED_OPINIONS_FOR_EMAIL =
             "SELECT * FROM OPINION WHERE STARS < 4 AND CUSTOMER_ID IN (SELECT ID FROM CUSTOMER WHERE EMAIL = :email)";
@@ -73,7 +71,8 @@ public class OpinionDataBaseRepository implements OpinionRepository {
     @Override
     public List<Opinion> findAll(final String email) {
         NamedParameterJdbcTemplate jdbcTemplate = new NamedParameterJdbcTemplate(simpleDriverDataSource);
-        return jdbcTemplate.query(SELECT_ALL_WHERE_CUSTOMER_EMAIL, Map.of("email", email), dataBaseDataMapper::opinionRowMapper);
+        return jdbcTemplate.query(SELECT_ALL_WHERE_CUSTOMER_EMAIL,
+                Map.of("email", email), dataBaseDataMapper::opinionRowMapper);
     }
 
     @Override
