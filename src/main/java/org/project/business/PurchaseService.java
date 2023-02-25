@@ -56,4 +56,5 @@ public class PurchaseService {
     public void removeAll() {
         purchaseRepository.removeAll();
     }
+
 }

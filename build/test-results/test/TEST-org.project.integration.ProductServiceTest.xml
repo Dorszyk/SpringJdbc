@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.project.integration.ShoppingCartServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-25T17:04:17" hostname="INBPOLNOT065" time="1.093">
+<testsuite name="org.project.integration.ProductServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-25T17:56:00" hostname="INBPOLNOT065" time="1.187">
   <properties/>
-  <testcase name="Polecenie9" classname="org.project.integration.ShoppingCartServiceTest" time="1.093"/>
+  <testcase name="Polecenie 10" classname="org.project.integration.ProductServiceTest" time="1.187"/>
   <system-out><![CDATA[INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 INFO  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3f053c80, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6c6c5427, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@618c5d94, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b40ceb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@13c3c1e1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1d8062d2, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e63ec0b]
-INFO  - Producer created: [Producer(id=3, producerName=Best Producer, address=Best Address)]
-INFO  - Product created: [Product(id=4, productCode=g22s, productName=Shoes, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=3, producerName=Best Producer, address=Best Address))]
-INFO  - Product created: [Product(id=5, productCode=Kl09, productName=TV, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=3, producerName=Best Producer, address=Best Address))]
-INFO  - Purchase created: [Purchase(id=3, customer=Customer(id=5, userName=zajavkowyzajavkowicz, email=zajavkowyzajavkowicz@gmail.com, name=Administrator, surname=Zajavka, dateOfBirth=1984-10-02, telephoneNumber=+56847542165), product=Product(id=4, productCode=g22s, productName=Shoes, productPrice=165.52, adultsOnly=false, description=Some Product Description, producer=Producer(id=3, producerName=null, address=null)), quantity=54, dateTime=2023-02-25T18:04:18.210227600+01:00)]
-INFO  - Customer: [zajavkowyzajavkowicz@gmail.com] successfully made a purchase of product: [g22s], quantity: [54]
+WARN  - Trying to find non-existing productCode: [60560-1072]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
